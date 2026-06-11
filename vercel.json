@@ -1,8 +1,7 @@
 {
   "buildCommand": "pnpm run build",
   "outputDirectory": "dist/LJWeb2.0/browser",
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/index.html" }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
