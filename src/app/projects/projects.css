@@ -1,0 +1,19 @@
+.extra-projects {
+  position: relative;
+  max-height: 200px;
+  overflow: clip;
+  overflow-x: visible;
+  pointer-events: none;
+  transition: max-height 0.5s ease, filter 0.3s ease;
+  filter: blur(4px);
+  mask-image: linear-gradient(to bottom, black 20%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 20%, transparent 100%);
+}
+
+.extra-projects.expanded {
+  max-height: none;
+  pointer-events: auto;
+  filter: blur(0);
+  mask-image: none;
+  -webkit-mask-image: none;
+}

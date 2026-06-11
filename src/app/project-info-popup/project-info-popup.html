@@ -1,0 +1,26 @@
+<mat-dialog-content class="flex flex-wrap cursor-default bg-card w-full *:px-5 *:pt-5">
+  <div class="text-blue-200 text-4xl font-bold">{{dataToUse.title}}</div>
+  <div class= "flex flex-wrap gap-2 text-blue-300/100 *:border-blue-300/20 *:p-[8px]">
+    @for (tech of dataToUse.popUp.tags; track $index) {
+      <div class="border-1 w-fit rounded-3xl">{{tech}}</div>
+    }
+  </div>
+  <img class="rounded-2xl popUpImage" src="{{dataToUse.popUp.popupImgURL}}" alt="photo of SearchNEU website">
+  <div class="text-blue-300 flex flex-col text-center justify-center items-center">
+    <div class="text-3xl pb-4">{{dataToUse.popUp.timeFrame}}</div>
+    <div class="text-xl pb-4">{{dataToUse.popUp.description}}</div>
+  </div>
+  <div>
+    <div class="text-blue-300 text-3xl pb-2 font-bold">What I Achieved:</div>
+    <ul class="list-['❖_'] marker:text-blue-300 marker:text-xl pl-8">
+      @for (bullet of dataToUse.popUp.bullets; track $index) {
+        <li class="text-lg py-1">{{bullet}}</li>
+      }
+    </ul>
+  </div>
+  <div [class.hidden] = "dataToUse.popUp.checkOut == 'N/A'" class="flex justify-center w-full pb-4">
+    <button class="text-blue-200 text-xl border-blue-200/60 border-1 rounded-2xl px-4 py-2 hover:bg-blue-200/10 hover:border-blue-200 hover:shadow-[0_0_14px_rgba(147,197,253,0.2)] transition-all duration-200 cursor-pointer">
+      <a target="_blank" href={{dataToUse.popUp.checkOut}}>Check It Out ↗</a>
+    </button>
+  </div>
+</mat-dialog-content>

@@ -1,0 +1,23 @@
+<div id="home" class="overflow-hidden text-blue-400 md:m-auto min-h-screen grid items-center justify-center">
+  <div class="grid justify-center items-center *:row-1 *:col-1 adjHeight">
+    <div class="place-self-center w-full -translate-y-[10%]">
+      <div class="items-center justify-center text-center">
+        <div class="text-[15vw] md:text-[10vw] header">Lucas Johnson</div>
+        <div class="flex text-[10vw] md:text-[5vw] justify-center typing">
+          <div class="">{{typeWriterEffect | async}}</div> <div class="animate-blink border-r-4">&#8203;</div>
+        </div>
+      </div>
+    </div>
+    <div class="h-5 w-fit place-self-center">
+      @for (item of orbitData.getData(); track item.id; let i = $index) {
+        <div (mouseenter)="togglePause()" (mouseleave)="togglePause()"
+        [class.paused] = "pauseLoop()"
+        class="orbitPath animate-spin-around"
+        [style.animation-duration] = "spinDur() + 's'"
+        [style.animation-delay]="'-' + (( spinDur() / orbitData.getData().length) * (i+1)) + 's'">
+        <a (click) = "filtersConn.adjustFilters(item.name, false)" [href]="'#projects'"><img class="w-12 h-12" [src]="item.imgUrl"></a>
+        </div>
+      }
+    </div>
+  </div>
+</div>

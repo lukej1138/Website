@@ -1,11 +1,15 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
+import { Contact } from './contact/contact';
+import { Hero } from './hero/hero';
+import { Navbar } from './navbar/navbar';
+import { Projects } from './projects/projects';
+import { Synopsis } from './synopsis/synopsis';
+import { Socials } from './socials/socials';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
+  imports: [Navbar, Hero, Contact, Projects, Synopsis, Socials]
 })
 export class App {
   protected readonly title = signal('LJWeb2.0');

@@ -1,0 +1,18 @@
+<div class="test" cdkDrag [cdkDragFreeDragPosition]="posToUse" cdkDragBoundary = ".{{parentName}}" (mousedown) = "onMouseDown()" >
+  <div class="cardContainer" [class.rotate] = "rotate()">
+    <div class="perspective">
+      <div [class.flipped] = "isFlipped()" class = "*:p-2 *:w-full *:h-full card relative w-84 h-120">
+        <div class = "front rounded-xl overflow-hidden absolute z-1">
+          <img class="w-full h-full absolute left-0 top-0" [src]="cardData.imgUrl" alt=""> 
+          <button class="absolute bg-gray-100 cursor-pointer h-7 w-7 bottom-2 right-2 rounded-full border-solid border-1 p-1 border-blue-200" (mousedown) = "$event.stopPropagation()" (click) = "toggleFlip()"><img src="./flip.png" alt="flip icon"></button>
+        </div>
+        <div class = "rounded-xl overflow-hidden back absolute top-0 left-0">
+          <img class="back-blur w-full h-full absolute left-0 top-0" [src]="cardData.blurImgUrl" alt="">
+          <img class="w-full h-full absolute left-0 top-0" [src]="cardData.textImgUrl" alt="">
+          <button class="absolute bg-gray-100 cursor-pointer h-7 w-7 bottom-2 right-2 rounded-full border-solid border-1 p-1 border-blue-200" (mousedown) = "$event.stopPropagation()" (click) = "toggleFlip()"><img src="./flip.png" alt="flip icon"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

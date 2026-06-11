@@ -1,0 +1,46 @@
+.animate-spin-around:hover {
+  scale: 1.005;
+  transition: scale 0.1s ease;
+}
+.paused {
+  animation-play-state: paused;
+}
+
+.orbitPath {
+  offset-path: rect(-25vh 100vw 25vh -100vw);
+  offset-rotate: 0deg; 
+}
+
+@media (min-width: 768px) {
+  .orbitPath {
+    offset-path: ellipse(40vw 36vh at 50% 33%);
+    offset-rotate: 0deg;
+  }
+}
+
+@media (min-width: 1200px) and (max-height: 770px) {
+  .orbitPath {
+    offset-path: rect(-150px 100vw 200px -100vw);
+  }
+  .adjHeight {
+    min-height: 550px;
+  }
+  .header {
+    font-size: 90px;
+  }
+
+  .typing {
+    font-size: 40px;
+  }
+}
+
+@media (max-height: 770px) {
+  .testing {
+    min-height: 550px;
+  }
+
+  .orbitPath {
+    offset-path: rect(-150px 100vw 200px -100vw);
+  }
+}
+

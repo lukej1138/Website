@@ -1,0 +1,49 @@
+:host {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+:host > div {
+  pointer-events: auto;
+}
+
+.perspective {
+  perspective: 800px;
+  position: relative;
+}
+
+.cardContainer {
+  transition: transform 0.1s ease-in-out;
+}
+
+.cardContainer:hover {
+  transform: scale(1.05);
+}
+
+.card {
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
+.cardContainer.rotate {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.front {
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.back-blur {
+  transform: rotateY(180deg);
+}
+

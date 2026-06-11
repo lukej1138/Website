@@ -1,0 +1,42 @@
+.bg-lines {
+  background-color: var(--color-good-black);
+
+  background-image: 
+    /* The radial mask fades smoothly, then turns solid black from 85% downward */
+    radial-gradient(ellipse 70% 60% at 50% 55%, transparent 20%, var(--color-good-black) 75%, var(--color-good-black) 85%),
+    linear-gradient(to right, rgba(96, 165, 250, 0.45) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(96, 165, 250, 0.45) 1px, transparent 1px);
+    
+  background-size: 100% 100%, 40px 40px, 40px 40px;
+}
+
+.pill {
+  border: 1px solid rgba(96, 165, 250, 0.35);
+  background: transparent;
+}
+
+.pill:hover {
+  border-color: rgba(96, 165, 250);
+  color: rgb(96, 165, 250);
+}
+
+.pill-active {
+  border-color: rgb(96, 165, 250, 0.65);
+  color: rgb(96, 165, 250);
+  background-color: rgba(96, 165, 250, 0.07);
+  box-shadow: 0 0 14px rgba(96, 165, 250, 0.2), 0 0 4px rgba(96, 165, 250, 0.1);
+}
+
+.card-slot {
+  display: grid;
+}
+
+.expand-card {
+  background: oklch(0.15 0.06 240);
+  border: 1px solid rgba(96, 165, 250, 0.22);
+  border-left: 2px solid rgba(96, 165, 250, 0.65);
+}
+
+.card-blurb {
+  color: oklch(0.93 0.005 285 / 0.72);
+}

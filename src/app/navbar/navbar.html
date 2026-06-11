@@ -1,0 +1,43 @@
+<nav class="fixed w-full bg-good-black/90 z-1000">
+  <div class="text-blue-400 mx-auto max-w-5xl">
+    <div class="flex items-center justify-between px-6 py-5">
+      <!--Logo-->
+      <div class="flex">
+        <div>
+          <a href="#home" class="flex items-center space-x-3">
+            <img class="w-12 h-12" src="boy-with-glasses.png">
+            <span class="text-xl md:text-3xl">Lucas Johnson</span>
+          </a>
+        </div>
+      </div>
+      <!--RightNav-->
+      <div class="hidden md:flex text-xl justify-end items-center space-x-15">
+        <a class="hover:text-blue-300" href="#projects">Projects</a>
+        <a class="hover:text-blue-300" href="#synopsis">About Me</a>
+        <a class="hover:text-blue-300" href="#contact">Contact</a>
+      </div>
+
+
+      <!---MobileMenuButton-->
+      <div class="md:hidden flex items-center">
+        <button (click)="toggleMenu()">
+          @if(!isOpen()) {
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          } @else {
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+          }
+        </button>
+      </div>     
+    </div>
+  </div>
+  <!---MobileMenu-->
+  <div class="w-full md:hidden fixed bg-good-black/90 text-md px-6 text-blue-400" [class.hidden] = "!isOpen()">
+    <a class="block px-3 pb-2 hover:text-blue-300" href="#projects">Projects</a>
+    <a class="block px-3 py-2 hover:text-blue-300" href="#synopsis">About Me</a>
+    <a class="block px-3 pt-2 pb-4 hover:text-blue-300" href="#contact">Contact</a>
+  </div>
+</nav>

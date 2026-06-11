@@ -1,0 +1,19 @@
+<div class="bg-lines pt-25 md:pb-40 card-parent flex flex-col justify-center items-center" id="synopsis">
+  <header class="flex flex-col items-center justify-center pb-7 text-5xl md:text-6xl">
+    <div class="flex">
+      <span class="font-bold text-blue-400">Who</span>
+      <span class="font-light text-white">Am</span>
+      <span class="font-bold text-blue-400">i</span>
+    </div>
+    <div class="mt-3 h-1 w-screen sm:w-85 md:w-90 rounded-full bg-blue-400"></div>
+  </header>
+  <div class = "flex justify-center px-10 overflow-hidden">Try Grabbing a Card To Find Out ;)</div>
+  <div class="pt-40 relative mx-auto min-h-[130vh] md:min-h-[50vh] md:max-h-screen"
+      [style.width.px]="containerDims().w"
+      [style.height.px]="containerDims().h"
+      [style.zoom]="scale()">
+    @for (card of cards; track card.id) {
+      <app-card-component [cardData] = card [parentName] = "'card-parent'"/>
+    }
+  </div>
+</div>

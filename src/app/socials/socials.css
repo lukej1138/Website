@@ -1,0 +1,11 @@
+.social-icon{
+    color: #60A5FA;
+    transition: transform ease 0.5s;
+    fill: #60A5FA;
+}
+
+.social-icon:hover{
+    color: #3B82F6;
+    fill: #3B82F6;
+    transform: translate(0, -10px);
+}
