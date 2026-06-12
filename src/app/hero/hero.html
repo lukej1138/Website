@@ -15,7 +15,7 @@
         class="orbitPath animate-spin-around"
         [style.animation-duration] = "spinDur() + 's'"
         [style.animation-delay]="'-' + (( spinDur() / orbitData.getData().length) * (i+1)) + 's'">
-        <a (click) = "filtersConn.adjustFilters(item.name, false)" [href]="'#projects'"><img class="w-12 h-12" [src]="item.imgUrl"></a>
+        <a (click) = "filtersConn.adjustFilters(item.name, false)" [href]="'#projects'"><img class="w-12 h-12 rounded-sm" [src]="item.imgUrl"></a>
         </div>
       }
     </div>

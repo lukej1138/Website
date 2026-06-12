@@ -43,7 +43,7 @@ export class Technologies {
     { id: 30, name: 'PyTorch',      imgUrl: 'https://cdn.simpleicons.org/pytorch' },
 
     // Missing from filter tags
-    { id: 31, name: 'Swing',        imgUrl: 'https://icon.icepanel.io/Technology/svg/Java.svg' },
+    { id: 31, name: 'Swing',        imgUrl: '/swing.png' },
     { id: 32, name: 'Netlify',      imgUrl: 'https://cdn.simpleicons.org/netlify' },
     { id: 33, name: 'SQLite',       imgUrl: 'https://cdn.simpleicons.org/sqlite' },
   ];
