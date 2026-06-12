@@ -17,6 +17,7 @@ export class Filters {
   }
 
   adjustFilters(filter : string, toRemove : boolean) {
+    this.clearFilters();
     if (toRemove && this.appliedFilters.includes(filter)) {
       this.removeFilter(filter);
     } else if (!toRemove) {
@@ -36,5 +37,10 @@ export class Filters {
     this.appliedFilters.push(filter);
     this.appliedFilters.sort();
     this.unappliedFilters = this.unappliedFilters.filter((item) => item != filter);
+  }
+
+  private clearFilters() {
+    this.appliedFilters = [];
+    this.unappliedFilters = this.rawData.getAllRawTags();
   }
 }

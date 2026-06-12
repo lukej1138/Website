@@ -10,7 +10,7 @@ export class Technologies {
     { id: 1,  name: 'Java',         imgUrl: 'https://icon.icepanel.io/Technology/svg/Java.svg' },
     { id: 2,  name: 'C++',          imgUrl: 'https://cdn.simpleicons.org/cplusplus' },
     { id: 3,  name: 'Python',       imgUrl: 'https://cdn.simpleicons.org/python' },
-    { id: 4,  name: 'R',            imgUrl: 'https://cdn.simpleicons.org/r' },
+    { id: 4,  name: 'R Language',            imgUrl: 'https://cdn.simpleicons.org/r' },
     { id: 5,  name: 'TypeScript',   imgUrl: 'https://cdn.simpleicons.org/typescript' },
     { id: 6,  name: 'HTML',         imgUrl: 'https://cdn.simpleicons.org/html5' },
     { id: 7,  name: 'CSS',          imgUrl: 'https://cdn.simpleicons.org/css' },

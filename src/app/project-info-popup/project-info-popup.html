@@ -1,5 +1,8 @@
 <mat-dialog-content class="flex flex-wrap cursor-default bg-card w-full *:px-5 *:pt-5">
-  <div class="text-blue-200 text-4xl font-bold">{{dataToUse.title}}</div>
+  <div class = "flex justify-between items-center">
+    <div class="text-blue-200 text-4xl font-bold">{{dataToUse.title}}</div>
+    <button [mat-dialog-close]="true" class="text-blue-300/60 hover:text-blue-200 text-2xl leading-none w-9 h-9 flex items-center justify-center rounded-full hover:bg-blue-200/10 transition-all duration-200 cursor-pointer flex-shrink-0">&#x2715;</button>
+  </div>
   <div class= "flex flex-wrap gap-2 text-blue-300/100 *:border-blue-300/20 *:p-[8px]">
     @for (tech of dataToUse.popUp.tags; track $index) {
       <div class="border-1 w-fit rounded-3xl">{{tech}}</div>
