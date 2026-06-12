@@ -1,10 +1,10 @@
 import { Component, inject } from '@angular/core';
-import {MatDialogModule, MatDialogActions, MatDialogContent } from '@angular/material/dialog';
+import {MatDialogModule, MatDialogContent } from '@angular/material/dialog';
 import { PROJECT_INFO_DATA } from '../token';
 
 @Component({
   selector: 'app-project-info-popup',
-  imports: [MatDialogModule, MatDialogContent, MatDialogActions],
+  imports: [MatDialogModule, MatDialogContent],
   templateUrl: './project-info-popup.html',
   styleUrl: './project-info-popup.css',
 })

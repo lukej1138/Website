@@ -8,7 +8,7 @@ export class Technologies {
   private data: TechInfo[] = [
     // Languages
     { id: 1,  name: 'Java',         imgUrl: 'https://icon.icepanel.io/Technology/svg/Java.svg' },
-    { id: 2,  name: 'C++',          imgUrl: 'https://cdn.simpleicons.org/cplusplus' },
+    { id: 2,  name: 'C++ Language',          imgUrl: 'https://cdn.simpleicons.org/cplusplus' },
     { id: 3,  name: 'Python',       imgUrl: 'https://cdn.simpleicons.org/python' },
     { id: 4,  name: 'R Language',            imgUrl: 'https://cdn.simpleicons.org/r' },
     { id: 5,  name: 'TypeScript',   imgUrl: 'https://cdn.simpleicons.org/typescript' },
@@ -34,13 +34,18 @@ export class Technologies {
     { id: 21, name: 'Docker',       imgUrl: 'https://cdn.simpleicons.org/docker' },
     { id: 22, name: 'PostgreSQL',   imgUrl: 'https://cdn.simpleicons.org/postgresql' },
     { id: 23, name: 'Vercel',       imgUrl: 'https://cdn.simpleicons.org/vercel/ffffff' },
-    { id: 24, name: 'VS Code',      imgUrl: 'https://icon.icepanel.io/Technology/svg/Visual-Studio-Code-%28VS-Code%29.svg' },
+    { id: 24, name: 'VsCode',        imgUrl: 'https://icon.icepanel.io/Technology/svg/Visual-Studio-Code-%28VS-Code%29.svg' },
     { id: 25, name: 'IntelliJ',     imgUrl: 'https://icon.icepanel.io/Technology/svg/IntelliJ-IDEA.svg'},
     { id: 26, name: 'Drizzle ORM',  imgUrl: 'https://cdn.simpleicons.org/drizzle' },
     { id: 27, name: 'Neon',         imgUrl: 'https://cdn.simpleicons.org/neon' },
     { id: 28, name: 'macOS',        imgUrl: 'https://cdn.simpleicons.org/apple/ffffff' },
     { id: 29, name: 'Linux',        imgUrl: 'https://cdn.simpleicons.org/linux' },
     { id: 30, name: 'PyTorch',      imgUrl: 'https://cdn.simpleicons.org/pytorch' },
+
+    // Missing from filter tags
+    { id: 31, name: 'Swing',        imgUrl: 'https://icon.icepanel.io/Technology/svg/Java.svg' },
+    { id: 32, name: 'Netlify',      imgUrl: 'https://cdn.simpleicons.org/netlify' },
+    { id: 33, name: 'SQLite',       imgUrl: 'https://cdn.simpleicons.org/sqlite' },
   ];
 
   getData(): TechInfo[] {

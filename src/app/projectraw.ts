@@ -227,7 +227,7 @@ export class ProjectRaw {
   ];
 
   private rawTags: string[] = [
-    "React.js", "TypeScript", "PostgreSQL", "Vercel", "Docker", "Next.js",
+    "React.js", "TypeScript", "PostgreSQL", "Vercel", "Node.js", "Docker", "Next.js", "Drizzle ORM", "Neon",
     "Python", "Flask", "PyTorch", "Pandas", "R Language",
     "Java", "JUnit", "Swing",
     "Linux", "C++ Language",
